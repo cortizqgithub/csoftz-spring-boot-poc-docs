@@ -1,0 +1,18 @@
+site:
+  title: Spring Boot POC
+  # the 404 page and sitemap files only get generated when the url property is set
+  url: http://springbootdocs.com
+  start_page: component-b::index.adoc
+content:
+  sources:
+  # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
+  - url: git@github.com:cortizqgithub/csoftz-chuck-norris-wrapper-service-docs.git
+    branches: master
+    start_path: docs
+  - url: git@github.com:cortizqgithub/csoftz-devops-docs.git
+    branches: master
+    start_path: docs
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
